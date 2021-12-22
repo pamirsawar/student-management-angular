@@ -1,0 +1,31 @@
+<!--<hr>--> 
+<table width="100" height="100" cellpadding="2"  > 
+  <thead style="background-color: blue; color:black"> 
+    <th>Rollno</th> 
+    <th>First Name</th> 
+    <th>Last Name</th> 
+    <th>Email</th> 
+    <th>Contact No</th> 
+    <th>Address</th> 
+    <th>Course</th> 
+    <th>Education</th> 
+    <th>Del Action</th> 
+    <th>Edit Action</th> 
+
+  </thead> 
+  <tbody> 
+    <tr *ngFor="let student of students; let i=index"> 
+      <td>{{student.rollno}}</td> 
+      <td>{{student.firstName}}</td> 
+      <td>{{student.lastName}}</td> 
+      <td>{{student.email}}</td> 
+      <td>{{student.contactNo}}</td> 
+      <td>{{student.address}}</td> 
+      <td>{{student.course}}</td> 
+      <td>{{student.education}}</td> 
+      <td><button (click)="deleteStudent(student.id)">Del</button></td> 
+      
+      <td><button (click)="navigateToEdit(student.id)">Edit</button></td> 
+    </tr> 
+  </tbody> 
+<table>															

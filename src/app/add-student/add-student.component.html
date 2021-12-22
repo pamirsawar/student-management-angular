@@ -1,0 +1,13 @@
+<form name="user-registration-http_form" (ngSubmit)="save()" novalidate> 
+  Rollno:<br><input type="number" name="rollno" [(ngModel)]="formObj.rollno"/><br> 
+  First Name:<br><input type="text" name="firstName" [(ngModel)]="formObj.firstName"/><br> 
+  Last Name:<br><input type="text" name="lastName" [(ngModel)]="formObj.lastName"/><br> 
+  Email:<br><input type="email" name="email" [(ngModel)]="formObj.email"/> 
+  
+  <Br> 
+  Contactno:<br><input type="text" name="contactNo" [(ngModel)]="formObj.contactNo"/><br> 
+  Address:<br><input type="text" name="address"  [(ngModel)]="formObj.address"/><br> 
+  Course:<br><input type="text" name="course" [(ngModel)]="formObj.course"/><br> 
+  Education:<br><input type="text" name="education"  [(ngModel)]="formObj.education"/><br> 
+  <button>Submit</button><br> 
+</form>

@@ -1,0 +1,7 @@
+thead,tr,td,th{
+	border: 1px solid black;
+}
+table,td,thead,th{
+	border-collapse:  collapse;
+}
+table{margin-left: 5%; width:90% ; height: 100% }
